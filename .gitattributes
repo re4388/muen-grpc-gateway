@@ -1,0 +1,11 @@
+# Auto detect text files and preform LF normalization
+* text=auto
+# Files related to Python
+*.py text eol=lf
+# Files are truely binary and should not be modified
+*.png binary
+*.jpg binary
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.model filter=lfs diff=lfs merge=lfs -text
